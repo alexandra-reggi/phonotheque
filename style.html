@@ -1,95 +1,111 @@
-/*BODY*/
+<!DOCTYPE html>
 
-body
-{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-    
-/*HEADER*/
-    
-header
-{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    height: 15%;
-    width: 100%;
-    background-color: #ffca4b;
-    ;
-    position: relative;
-}
-    
-/*HEADER GAUCHE*/
-    
-#header-gauche
-{
-    display: flex;
-    flex-direction: row;
-    justify-content:  center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 50%;
-}
-    
-#logo
-{
-    margin: 0;
-    padding: 0;
-    width: 95px;
-    height: 95px;
-}
+    <html>
 
-.a-logos:hover
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="phonotheque.css">
+            <title>Chanson francaise | Phonothèque</title>
+        </head>
 
-{
-    transform: scale(1.1);
-}
-    
-/*HEADER DROIT*/
-    
-#header-droit
-{
-    padding : 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%; 
-}
-    
-/*BARRE NAVIGATION HEADER*/
-    
-nav
-{
-    margin: 0;
-    padding: 0;
-}
+        <body>
 
-nav ul
-{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+            <header>
+      
+                <article class="a-logos" href="phonotheque.html" title="Accueil | phonothèque">
+                    <img id="logo" src="casque.png">
+                </article>
 
-nav ul li
-{
-    position: relative;
-    display: inline-block;
-}
-nav a
-{
-    display: block;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: 15;
-    color: #ffca4b;
-    padding: 5px;
-}
+                    <article id=barre-vav>
+                        <nav>
+                            <ul>
+                                <li><a id="a-deroulant" href="style.html">Chanson Française | Phonothèque</a>
+                                    <ul id="ul-sous">
+                                        <li><a href="phonotheque.html"><strong>accueil</strong></a></li>
+                                        <li><a href="style1.html"><strong>K-pop</strong></a></li>
+                                        <li><a href="style2.html"><strong>Rap</strong></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </article>
+
+                <article class="a-logos" href="phonotheque.html" title="Accueil | Phonothèque">
+                    <img id="logo" src="frequence.png">
+                </article>
+
+            </header>
+
+                <section id="sous-header">
+                    <articel>
+                        <p id="bienvenu">Bienvenue dans la chanson Française avec l'artiste</p>
+                    </articel>
+
+                    <article>
+                        <h1 id="Ind">INDILA</h1>
+                    </article>
+                </section>
+    
+            <main id="main-style">
+       
+                <article id="maingauche">
+                    <p class="p-main-titre"><strong> Pochette de l'Album "Mini World" d'INDILA</strong><br></p>
+                        <a href="https://www.youtube.com/watch?v=K5KAc5CoCuk&list=OLAK5uy_keXNMfAp2UBP5gJamvfErhQIvnVRC8bds"><img id="Pochette-album" src="pochette-Indila.jpg"></img></a>
+                        <p><a id="ici" href="https://www.youtube.com/watch?v=K5KAc5CoCuk&list=OLAK5uy_keXNMfAp2UBP5gJamvfErhQIvnVRC8bds">Album à ecouter en entier ici via YouTube</a></p>
+                </article>
+
+                <article id="mainmilieu">
+                    <p class="p-main-titre"><strong>UN EXTRAIT</strong></p>
+                        <audio controls>
+                            <source src="Indila.mp3">
+                        </audio>
+                    <p class="p-main-style">
+                        Indila - Nouveau single « Tourner dans le vide »<br>
+                        Premier Album « Mini World » toujours disponible : http://po.st/MiniWorld<br><br>
+                                                                                                         
+                        Site officiel:<a href="http://www.indila.com"> http://www.indila.com </a><br>
+                        Facebook:<a href="https://www.facebook.com/IndilaOfficiel"> https://www.facebook.com/IndilaOfficiel</a><br>
+                        Twitter:<a href="http://www.twitter.com/Indila"> http://www.twitter.com/Indila</a><br>
+                        
+                        Compositeurs: Indila - Skalpovich<br>
+                        Auteur: Indila<br>
+                        Réalisateur du clip: Julien Bloch</p>
+                </article>
+
+                <article id="maindroite">
+                    <p class="p-main-titre"><strong>Indila Biographie</strong></p>
+                        <a href="https://www.universalmusic.fr/artiste/3407-indila/bio"><img id="biographie" src="photo-Indila.jfif"></a>
+                    <p class="p-main"> By Universal Music</br></p>
+                </article>
+
+            </main>
+
+
+                <footer id="footer-style">
+                
+                    <article>
+                        <ul id="ul-footer">
+                            <li class="li-footer"><a class="a-footer" href="phonotheque.html">Accueil |</a></li>
+                            <li class="li-footer"><a class="a-footer" href="style.html">Chanson Française |</a></li>
+                            <li class="li-footer"><a class="a-footer" href="style1.html">K-pop |</a></li>
+                            <li class="li-footer"><a class="a-footer" href="style2.html">Rap |</a></li>
+                        </ul>
+                    </article>
+
+
+        
+                    <article>
+                        <a class="a-logos" href="https://www.instagram.com/discogs/" title="Instagram | Phonothèque" target="_blank">
+                            <img class="logos" src="Insta.png"></a>
+                    </article>
+
+                    <article>
+                        <a class="a-logos" href="https://www.facebook.com/Discogs/"
+                            title="Facebook | Phonothèque" target="_blank"><img class="logos" src="FB.png"></a>
+                    </article>
+
+                </footer>
+
+        </body>
+
+    </html>
